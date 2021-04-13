@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, p::-moz-selection, a::-moz-selection {
+  color: #4c4746;
+  background: #fe9933;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection,
+a::selection {
+  color: #4c4746;
+  background: #fe9933;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: clamp(3rem, 5vw, 4.3rem);
+  line-height: clamp(3.5rem, 4.5vw, 5rem);
+  font-weight: 900;
+  color: #cc6666;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  line-height: clamp(1.6rem, 2.5vw, 4rem);
+  font-weight: 900;
+  color: #4c4746;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  line-height: clamp(1rem, 4.5vw, 1rem);
+  font-weight: 600;
+  color: #4c4746;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4c4746;
+}
+
+p {
+  font-weight: 300;
+  color: #4c4746;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #fe9933;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #4c4746;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  background-color: #fe9933;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover, .btn:focus {
+  transform: scale(1.05);
+  background-color: #fe8c1a;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #66cccc;
+  color: #66cccc;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: transparent;
+  border-color: #53c6c6;
+}

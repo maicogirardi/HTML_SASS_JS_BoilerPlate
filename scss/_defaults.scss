@@ -1,0 +1,138 @@
+$color-white: #fff;
+$color-black: #4c4746;
+$color-gray: #828282;
+$color-light: #e0e0e0;
+$color-orange: #fe9933;
+$color-pale: #e3a76b;
+$color-red: #cc6666;
+$color-blue: #66cccc;
+$color-blue2: #56ccf2;
+$color-green: #80c7a3;
+$color-yellow: #fdc728;
+$color-yellow-light: #ffdd77;
+$color-purple: #bb6bd9;
+$color-gradient-blue-1: #d3f2ff;
+$color-gradient-blue-2: #b5e4ff;
+$box-shadow-dark: 0 5px 10px rgba($color-black, 0.5);
+
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: $color-white;
+
+	&::selection {
+		color: $color-black;
+		background: $color-orange;
+	}
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: clamp(3rem, 5vw, 4.3rem);
+	line-height: clamp(3.5rem, 4.5vw, 5rem);
+	font-weight: 900;
+	color: $color-red;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: clamp(1.5rem, 2.8vw, 2rem);
+	line-height: clamp(1.6rem, 2.5vw, 4rem);
+	font-weight: 900;
+	color: $color-black;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: clamp(0.8rem, 4vw, 1.2rem);
+	line-height: clamp(1rem, 4.5vw, 1rem);
+	font-weight: 600;
+	color: $color-black;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 600;
+	color: $color-black;
+}
+
+p {
+	font-weight: 300;
+	color: $color-black;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background: $color-orange;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: $color-black;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.container {
+	max-width: 80%;
+	margin: auto;
+}
+
+.btn {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 0.8em 2em;
+	border: none;
+	border-radius: 0.5em;
+	color: $color-white;
+	background-color: $color-orange;
+	transition: all 0.2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.05);
+		background-color: darken($color-orange, 5%);
+	}
+
+	&-secondary {
+		background-color: transparent;
+		border: 2px solid $color-blue;
+		color: $color-blue;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border-color: darken($color-blue, 5%);
+		}
+	}
+}
