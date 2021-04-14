@@ -100,13 +100,14 @@ a {
 	font-size: 1rem;
 }
 
+// <----------------  HELPERS
 .container {
 	max-width: 80%;
 	margin: auto;
 }
 
 .btn {
-	font-family: 'Roboto', sans-serif;
+	font-family: inherit;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1rem;
@@ -135,4 +136,10 @@ a {
 			border-color: darken($color-blue, 5%);
 		}
 	}
+}
+
+.dfc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
